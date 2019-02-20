@@ -1,3 +1,33 @@
+@import '../utilities/_breakpoints.scss';
+
+//Color for nav links
+$nav_links: #a6a6a6;
+
 .nav {
-  
+
+  @include breakpoint-tablet-lg-down {
+    display: none;
+  }
+
+  width: 31.5rem;;
+  margin-right: 9rem;
+  display: flex;
+
+  .nav__list {
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+
+    .nav__list-item {
+      font-size: .95rem;
+
+      .nav__link {
+        text-decoration: none;
+        color: $nav_links;
+      }
+    }
+  }
+
 }

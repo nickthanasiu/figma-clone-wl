@@ -1,3 +1,11 @@
+@import '../utilities/_breakpoints.scss';
+
 .main-header {
-  height: 4rem;
+  background-color: black;
+  height: 4.3rem;
+  padding: .625rem 1.25rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

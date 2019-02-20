@@ -1,0 +1,11 @@
+@import '../utilities/_breakpoints.scss';
+
+#mobile-menu-btn {
+  fill: #fff;
+  width: 1.25rem;
+  height: 1.125rem;
+
+  @include breakpoint-screen-sm-up {
+    display: none;
+  }
+}

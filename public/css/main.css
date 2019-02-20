@@ -23,11 +23,78 @@ img {
   max-width: 100%;
   height: auto !important; }
 
+* {
+  font-family: 'Raleway', sans-serif; }
+
 .btn {
-  color: #3EC28F; }
+  background-color: #3EC28F;
+  color: white;
+  font-size: .875rem;
+  font-weight: 300;
+  letter-spacing: .025rem;
+  padding: .625rem 2rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease; }
+  .btn:hover {
+    background-color: #18a26e; }
+  .btn:focus {
+    outline: none; }
+  .btn.signup-btn {
+    position: fixed;
+    top: 1rem;
+    right: 1.25rem; }
+
+.figma-logo {
+  width: 30px;
+  height: 45px; }
+  @media (min-width: 800px) {
+    .figma-logo {
+      width: 22px;
+      height: 33px; } }
+
+#mobile-menu-btn {
+  fill: #fff;
+  width: 1.25rem;
+  height: 1.125rem; }
+  @media (min-width: 800px) {
+    #mobile-menu-btn {
+      display: none; } }
 
 .main-header {
-  height: 4rem; }
+  background-color: black;
+  height: 4.3rem;
+  padding: .625rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.nav {
+  width: 31.5rem;
+  margin-right: 9rem;
+  display: flex; }
+  @media (max-width: 799px) {
+    .nav {
+      display: none; } }
+  .nav .nav__list {
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-around; }
+    .nav .nav__list .nav__list-item {
+      font-size: .95rem; }
+      .nav .nav__list .nav__list-item .nav__link {
+        text-decoration: none;
+        color: #a6a6a6; }
+
+.hero {
+  background-color: black;
+  min-height: 100vh; }
 
 .hidden {
   display: none; }

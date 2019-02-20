@@ -3,5 +3,33 @@ $btn: #3EC28F;
 $btn--hover: #18a26e;
 
 .btn {
-  color: $btn;
+  background-color: $btn;
+  color: white;
+  font-size: .875rem;
+  font-weight: 300;
+  letter-spacing: .025rem;
+  padding: .625rem 2rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+
+  &:hover {
+    background-color: $btn--hover;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &.signup-btn {
+    position: fixed;
+    top: 1rem;
+    right: 1.25rem;
+  }
 }

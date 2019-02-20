@@ -1,0 +1,90 @@
+$breakpoints: (
+  'mobile-sm' : 320px,
+  'mobile-lg' : 480px,
+  'tablet-sm' : 615px,
+  'tablet-lg' : 736px,
+  'screen-sm' : 800px,
+  'screen-lg' : 1024px,
+  'screen-xlg' : 1280px,
+  'screen-xxlg' : 1690px
+);
+
+@mixin breakpoint-mobile-sm-down {
+  $max-value: map-get($breakpoints, mobile-lg) - 1;
+
+  @media (max-width: $max-value) {
+    @content;
+  }
+}
+
+@mixin breakpoint-mobile-sm-up {
+  $min-value: map-get($breakpoints, mobile-sm);
+
+  @media (min-width: $min-value) {
+    @content;
+  }
+}
+
+@mixin breakpoint-mobile-lg-down {
+  $max-value: map-get($breakpoints, tablet-sm) - 1;
+
+  @media (max-width: $max-value) {
+    @content;
+  }
+}
+
+@mixin breakpoint-mobile-lg-up {
+  $min-value: map-get($breakpoints, mobile-lg);
+
+  @media (min-width: $min-value) {
+    @content;
+  }
+}
+
+@mixin breakpoint-tablet-sm-down {
+  $max-value: map-get($breakpoints, tablet-lg) - 1;
+
+  @media (max-width: $max-value) {
+    @content;
+  }
+}
+
+@mixin breakpoint-tablet-sm-up {
+  $min-value: map-get($breakpoints, tablet-sm);
+
+  @media (min-width: $min-value) {
+    @content;
+  }
+}
+
+@mixin breakpoint-tablet-lg-down {
+  $max-value: map-get($breakpoints, screen-sm) - 1;
+
+  @media (max-width: $max-value) {
+    @content;
+  }
+}
+
+@mixin breakpoint-tablet-lg-up {
+  $min-value: map-get($breakpoints, tablet-lg);
+
+  @media (min-width: $min-value) {
+    @content;
+  }
+}
+
+@mixin breakpoint-screen-sm-down {
+  $max-value: map-get($breakpoints, screen-lg) - 1;
+
+  @media (max-width: $max-value) {
+    @content;
+  }
+}
+
+@mixin breakpoint-screen-sm-up {
+  $min-value: map-get($breakpoints, screen-sm);
+
+  @media (min-width: $min-value) {
+    @content;
+  }
+}

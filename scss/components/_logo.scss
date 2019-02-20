@@ -1,4 +1,11 @@
+@import '../utilities/_breakpoints.scss';
+
 .figma-logo {
-  width: 3rem;
-  height: 3rem;
+  width: 30px;
+  height: 45px;
+
+  @include breakpoint-screen-sm-up {
+    width: 22px;
+    height: 33px;
+  }
 }

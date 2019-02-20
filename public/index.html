@@ -10,29 +10,52 @@
     <title>Figma Clone</title>
 
     <!-- Stylesheets -->
+    <!--
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    -->
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
+    
     <header class="main-header">
-      <svg viewBox="0 0 38 57" width="22px" height="33px" class="figma-logo">
+      <svg viewBox="0 0 38 57" class="figma-logo">
         <path fill="#1abcfe" d="M19 28.5a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0z"></path>
         <path fill="#0acf83" d="M0 47.5A9.5 9.5 0 0 1 9.5 38H19v9.5a9.5 9.5 0 1 1-19 0z"></path>
         <path fill="#ff7262" d="M19 0v19h9.5a9.5 9.5 0 1 0 0-19H19z"></path>
         <path fill="#f24e1e" d="M0 9.5A9.5 9.5 0 0 0 9.5 19H19V0H9.5A9.5 9.5 0 0 0 0 9.5z"></path>
         <path fill="#a259ff" d="M0 28.5A9.5 9.5 0 0 0 9.5 38H19V19H9.5A9.5 9.5 0 0 0 0 28.5z"></path>
       </svg>
-      <nav>
-
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__list-item">
+            <a class="nav__link" href="#">Features</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="nav__link" href="#">Pricing</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="nav__link" href="#">Customers</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="nav__link" href="#">Blog</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="nav__link" href="#">Sign In</a>
+          </li>
+        </ul>
+        <button type="button" class="btn signup-btn">
+          Sign Up
+        </button>
       </nav>
-      <button>
-        Sign Up
-      </button>
+
+      <svg id="mobile-menu-btn">
+        <path fill-rule="evenodd" d="M0 0h20v2H0V0zm0 8h20v2H0V8zm0 8h20v2H0v-2z"></path>
+      </svg>
     </header>
 
-
-
-    <h1>Figma Clone</h1>
+    <section class="hero">
+      <h1>Figma Clone</h1>
+    </section>
   </body>
 </html>
