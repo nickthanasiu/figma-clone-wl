@@ -1,4 +1,17 @@
+@import  '../utilities/_breakpoints.scss';
+
+$video_width--mobile: 83vw;
+$video_max_width--mobile: 400px;
+
 .video {
-  width: 315px;
-  height: 315px;
+  // Video should only be displayed on larger screens
+  @include breakpoint-screen-sm-down {
+    display: none;
+  }
+
+  width: $video_width--mobile;
+  height: auto;
+  max-width: $video_max_width--mobile;
+  max-height: $video_max_width--mobile;
+  background-color: lightgrey;
 }

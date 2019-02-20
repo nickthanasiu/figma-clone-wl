@@ -1,0 +1,17 @@
+@import  '../utilities/_breakpoints.scss';
+
+$gif_width--mobile: 83vw;
+$gif_max_width--mobile: 400px;
+
+.gif {
+  // Gif should only be displayed on smaller screens
+  @include breakpoint-screen-lg-up {
+    display: none;
+  }
+
+  width: $gif_width--mobile;
+  height: auto;
+  max-width: $gif_max_width--mobile;
+  max-height: $gif_max_width--mobile;
+  background-color: lightgrey;
+}

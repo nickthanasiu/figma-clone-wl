@@ -9,7 +9,8 @@
   box-sizing: border-box; }
 
 html {
-  font-size: 16px; }
+  font-size: 16px;
+  overflow-x: hidden; }
 
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   margin: 0;
@@ -29,18 +30,22 @@ img {
 .btn {
   background-color: #3EC28F;
   color: white;
-  font-size: .875rem;
+  font-size: .75rem;
   font-weight: 300;
-  letter-spacing: .025rem;
-  padding: .625rem 2rem;
+  letter-spacing: .05rem;
+  padding: .875rem 2rem;
   border: none;
-  border-radius: 3px;
+  border-radius: 4px;
   cursor: pointer;
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   -ms-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease; }
+  @media (min-width: 800px) {
+    .btn {
+      font-size: .875rem;
+      padding: .625rem 2rem; } }
   .btn:hover {
     background-color: #18a26e; }
   .btn:focus {
@@ -50,6 +55,11 @@ img {
     top: 1rem;
     right: 1.25rem; }
 
+.header {
+  color: white;
+  font-weight: 500;
+  letter-spacing: .05rem; }
+
 .figma-logo {
   width: 30px;
   height: 45px; }
@@ -58,12 +68,39 @@ img {
       width: 22px;
       height: 33px; } }
 
+.paragraph {
+  color: white;
+  letter-spacing: .05rem;
+  font-size: .8rem;
+  font-weight: 300;
+  line-height: 1.25rem; }
+
 #mobile-menu-btn {
   fill: #fff;
   width: 1.25rem;
   height: 1.125rem; }
   @media (min-width: 800px) {
     #mobile-menu-btn {
+      display: none; } }
+
+.gif {
+  width: 83vw;
+  height: auto;
+  max-width: 400px;
+  max-height: 400px;
+  background-color: lightgrey; }
+  @media (min-width: 1024px) {
+    .gif {
+      display: none; } }
+
+.video {
+  width: 83vw;
+  height: auto;
+  max-width: 400px;
+  max-height: 400px;
+  background-color: lightgrey; }
+  @media (max-width: 1023px) {
+    .video {
       display: none; } }
 
 .main-header {
@@ -94,7 +131,41 @@ img {
 
 .hero {
   background-color: black;
-  min-height: 100vh; }
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100vw;
+  padding: 2.25rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; }
+  @media (min-width: 800px) {
+    .hero {
+      padding: 4.375rem; } }
+  .hero .hero__text {
+    width: 83vw;
+    max-width: 400px;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    @media (min-width: 480px) {
+      .hero .hero__text {
+        padding: 0 1rem; } }
+    @media (min-width: 615px) {
+      .hero .hero__text {
+        padding: 0; } }
+    .hero .hero__text .hero__header {
+      font-size: 1.125rem;
+      margin-bottom: 1rem; }
+      @media (min-width: 615px) {
+        .hero .hero__text .hero__header {
+          font-size: 1.675rem; } }
+    .hero .hero__text .hero__paragraph {
+      text-align: center;
+      margin-bottom: 1.5rem; }
+    .hero .hero__text .hero__try-figma-btn {
+      padding: .875rem 2rem; }
 
 .hidden {
   display: none; }

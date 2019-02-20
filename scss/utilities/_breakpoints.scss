@@ -88,3 +88,19 @@ $breakpoints: (
     @content;
   }
 }
+
+@mixin breakpoint-screen-lg-down {
+  $max-value: map-get($breakpoints, screen-xlg) - 1;
+
+  @media (max-width: $max-value) {
+    @content;
+  }
+}
+
+@mixin breakpoint-screen-lg-up {
+  $min-value: map-get($breakpoints, screen-lg);
+
+  @media (min-width: $min-value) {
+    @content;
+  }
+}

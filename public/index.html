@@ -17,7 +17,8 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    
+
+    <!-- Header -->
     <header class="main-header">
       <svg viewBox="0 0 38 57" class="figma-logo">
         <path fill="#1abcfe" d="M19 28.5a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0z"></path>
@@ -44,7 +45,7 @@
             <a class="nav__link" href="#">Sign In</a>
           </li>
         </ul>
-        <button type="button" class="btn signup-btn">
+        <button type="button" class="signup-btn btn">
           Sign Up
         </button>
       </nav>
@@ -54,8 +55,32 @@
       </svg>
     </header>
 
+    <!-- Hero section -->
     <section class="hero">
-      <h1>Figma Clone</h1>
+      <!-- Gif to be displayed on smaller screens -->
+      <img class="gif" src="assets/gif/figma_hero_animation_mobile.gif" />
+
+      <!-- Video to be displayed on larger screens -->
+      <video
+          class="video"
+          src="assets/video/figma_hero_animation.mp4"
+          type="video/mp4"
+          preload="auto" autoplay muted loop>
+      </video>
+
+      <div class="hero__text">
+        <h1 class="hero__header header">
+          A better way to design.
+        </h1>
+
+        <p class="hero__paragraph paragraph">
+          Design, prototype, and collaborate all in the browser-with Figma.
+        </p>
+
+        <button type="button" class="hero__try-figma-btn btn">
+          Try Figma for free
+        </button>
+      </div>
     </section>
   </body>
 </html>
