@@ -1,0 +1,86 @@
+@import  '../utilities/_breakpoints.scss';
+
+.brands {
+  background-color: black;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include breakpoint-screen-sm-up {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .brands__header {
+    margin-bottom: 4.75rem;
+  }
+
+  .brands__logo-grid {
+
+    display: flex;
+    justify-content: center;
+    max-width: 1040px;
+    padding: 0 2rem;
+    width: 300px;
+
+    @include breakpoint-mobile-lg-up {
+      width: 90vw;
+      padding: 0 1.5rem;
+    }
+
+    @include breakpoint-tablet-sm-up {
+      //padding: 0 2rem;
+      width: 80vw;
+    }
+
+    @include breakpoint-screen-sm-up {
+      width: 100%;
+      width: 100vw;
+      //width: 730px;
+      padding: 0
+    }
+
+
+
+    .brands__logo-grid__row {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      margin: 0 auto;
+
+      @include breakpoint-screen-sm-up {
+        width: 100%;
+      }
+
+      .brands__logo-grid__img {
+        width: 77px;
+        max-width: 77px;
+        height: 77px;
+        max-height: 77px;
+        //background-color: purple;
+        //flex-basis: 20%;
+        margin-bottom: 60px;
+        margin-left: .5rem;
+        margin-right: .5rem;
+
+
+        @include breakpoint-mobile-lg-up {
+          margin-left: 6%;
+          margin-right: 6%;
+        }
+
+        @include breakpoint-screen-sm-up {
+          //margin-left: 20px;
+          //margin-right: 20px;
+          margin-left: 3.5%;
+          margin-right: 3.5%;
+          margin-bottom: 50px;
+
+        }
+
+      }
+    }
+  }
+}

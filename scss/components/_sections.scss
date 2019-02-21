@@ -1,0 +1,13 @@
+@import  '../utilities/_breakpoints.scss';
+
+.section {
+  padding: 2.25rem 0;
+
+  @include breakpoint-screen-sm-up {
+    padding: 4.375rem 0;
+  }
+
+  @include breakpoint-screen-xxlg-up {
+    padding: 70px 0;
+  }
+}
