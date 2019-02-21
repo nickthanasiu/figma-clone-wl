@@ -54,9 +54,12 @@ img {
   .btn:focus {
     outline: none; }
   .btn.signup-btn {
+    font-size: .875rem;
     position: fixed;
     top: 1rem;
-    right: 1.25rem; }
+    right: 1.25rem;
+    border: 1px solid rgba(24, 162, 110, 0.3);
+    z-index: 9999; }
 
 .header {
   color: white;

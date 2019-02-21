@@ -1,8 +1,10 @@
 @import  '../utilities/_breakpoints.scss';
+@import  '../base/_z-index.scss';
 
 // Button specific colors
 $btn: #3EC28F;
 $btn--hover: #18a26e;
+
 
 .btn {
   background-color: $btn;
@@ -40,8 +42,13 @@ $btn--hover: #18a26e;
   }
 
   &.signup-btn {
+    font-size: .875rem;
     position: fixed;
     top: 1rem;
     right: 1.25rem;
+    border: 1px solid rgba($btn--hover, .3);
+
+    // Mixin function that will set signup btn's z-index to 9999
+    @include z-index(signup-btn);
   }
 }
