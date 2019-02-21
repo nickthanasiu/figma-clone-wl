@@ -3,9 +3,11 @@
 $hero_text_width--mobile-sm: 83vw;
 $hero_text_max_width--mobile-sm: 400px;
 
+$hero_text_width--screen-lg: 32vw;
+$hero_text_max_width: 410px;
+
 .hero {
   background-color: black;
-  min-height: 100vh;
   width: 100%;
   max-width: 100vw;
   padding: 2.25rem 0;
@@ -16,12 +18,24 @@ $hero_text_max_width--mobile-sm: 400px;
   align-items: center;
 
   @include breakpoint-screen-sm-up {
-    padding: 4.375rem;
+    padding: 4.375rem 0;
   }
+
+  @include breakpoint-screen-lg-up {
+    padding: 4.375rem 1.875rem;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  @include breakpoint-screen-xxlg-up {
+    padding: 70px 0;
+  }
+
 
   .hero__text {
     width: $hero_text_width--mobile-sm;
-    max-width: $hero_text_max_width--mobile-sm;
+    //max-width: $hero_text_max_width--mobile-sm;
+    max-width: $hero_text_max_width;
     margin-top: 2rem;
 
     display: flex;
@@ -36,6 +50,26 @@ $hero_text_max_width--mobile-sm: 400px;
       padding: 0;
     }
 
+    @include breakpoint-screen-lg-up {
+      width: $hero_text_width--screen-lg;
+      min-height: 400px;
+      height: auto;
+      margin-top: 0;
+      padding-top: 5%;
+
+      align-items: flex-start;
+    }
+
+    @include breakpoint-screen-xlg-up {
+      padding-top: 3%;
+    }
+
+    @include breakpoint-screen-xxlg-up {
+      margin-left: auto;
+      margin-right: 5rem;
+      padding-top: 2.25rem;
+    }
+
     .hero__header {
       font-size: 1.125rem;
       margin-bottom: 1rem;
@@ -43,16 +77,45 @@ $hero_text_max_width--mobile-sm: 400px;
       @include breakpoint-tablet-sm-up {
         font-size: 1.675rem;
       }
+
+      @include breakpoint-screen-lg-up {
+        font-size: 2.75rem;
+        font-weight: 500;
+        margin-bottom: 2.25rem;
+      }
+
+      @include breakpoint-screen-xlg-up {
+        font-size: 3.875rem;
+        font-weight: 500;
+        margin-bottom: 2.75rem;
+      }
     }
 
     .hero__paragraph {
       text-align: center;
       margin-bottom: 1.5rem;
+
+      @include breakpoint-screen-lg-up {
+        text-align: left;
+        margin-bottom: 1.75rem;
+      }
+
+      @include breakpoint-screen-xlg-up {
+
+        margin-bottom: 2.75rem;
+      }
     }
 
     .hero__try-figma-btn {
-      //font-size: .75rem;
       padding: .875rem 2rem;
+
+      @include breakpoint-screen-lg-up {
+        padding: 1rem 2.5rem;
+      }
+
+      @include breakpoint-screen-xlg-up {
+        padding: 1.125rem 2.675rem;
+      }
     }
   }
 }

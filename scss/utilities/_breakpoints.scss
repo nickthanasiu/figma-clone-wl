@@ -4,9 +4,9 @@ $breakpoints: (
   'tablet-sm' : 615px,
   'tablet-lg' : 736px,
   'screen-sm' : 800px,
-  'screen-lg' : 1024px,
-  'screen-xlg' : 1280px,
-  'screen-xxlg' : 1690px
+  'screen-lg' : 960px,
+  'screen-xlg' : 1200px,
+  'screen-xxlg' : 1320px
 );
 
 @mixin breakpoint-mobile-sm-down {
@@ -99,6 +99,30 @@ $breakpoints: (
 
 @mixin breakpoint-screen-lg-up {
   $min-value: map-get($breakpoints, screen-lg);
+
+  @media (min-width: $min-value) {
+    @content;
+  }
+}
+
+@mixin breakpoint-screen-xlg-down {
+  $max-value: map-get($breakpoints, screen-xxlg) - 1;
+
+  @media (max-width: $max-value) {
+    @content;
+  }
+}
+
+@mixin breakpoint-screen-xlg-up {
+  $min-value: map-get($breakpoints, screen-xlg);
+
+  @media (min-width: $min-value) {
+    @content;
+  }
+}
+
+@mixin breakpoint-screen-xxlg-up {
+  $min-value: map-get($breakpoints, screen-xxlg);
 
   @media (min-width: $min-value) {
     @content;

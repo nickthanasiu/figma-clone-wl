@@ -27,6 +27,10 @@ $btn--hover: #18a26e;
     padding: .625rem 2rem;
   }
 
+  @include breakpoint-screen-xlg-up {
+    font-size: 1rem;
+  }
+
   &:hover {
     background-color: $btn--hover;
   }

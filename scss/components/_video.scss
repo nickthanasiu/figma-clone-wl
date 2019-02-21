@@ -1,7 +1,7 @@
 @import  '../utilities/_breakpoints.scss';
 
-$video_width--mobile: 83vw;
-$video_max_width--mobile: 400px;
+$video_width--mobile: 56vw;
+$video_max_width: 739px;
 
 .video {
   // Video should only be displayed on larger screens
@@ -9,9 +9,15 @@ $video_max_width--mobile: 400px;
     display: none;
   }
 
+
   width: $video_width--mobile;
   height: auto;
-  max-width: $video_max_width--mobile;
-  max-height: $video_max_width--mobile;
+  //max-width: $video_max_width--mobile;
+  //max-height: $video_max_width--mobile;
   background-color: lightgrey;
+
+  @include breakpoint-screen-xxlg-up {
+    margin-right: auto;
+    max-width: $video_max_width;
+  }
 }
