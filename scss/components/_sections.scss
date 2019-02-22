@@ -1,7 +1,7 @@
 @import  '../utilities/_breakpoints.scss';
 
 .section {
-  padding: 2.25rem 0;
+  padding: 2.25rem 1.875rem;
 
   @include breakpoint-screen-sm-up {
     padding: 4.375rem 0;
