@@ -66,6 +66,17 @@ img {
   font-weight: 500;
   letter-spacing: .05rem; }
 
+.link {
+  text-decoration: none;
+  color: #30c2ff;
+  font-size: .825rem; }
+  @media (min-width: 800px) {
+    .link {
+      font-size: .9rem; } }
+  @media (min-width: 1200px) {
+    .link {
+      font-size: 1.125rem; } }
+
 .figma-logo {
   width: 30px;
   height: 45px; }
@@ -75,7 +86,7 @@ img {
       height: 33px; } }
 
 .section {
-  padding: 2.25rem 0; }
+  padding: 2.25rem 1.875rem; }
   @media (min-width: 800px) {
     .section {
       padding: 4.375rem 0; } }
@@ -188,7 +199,7 @@ img {
     @media (min-width: 480px) {
       .hero .hero__text {
         padding: 0 1rem; } }
-    @media (min-width: 615px) {
+    @media (min-width: 650px) {
       .hero .hero__text {
         padding: 0; } }
     @media (min-width: 960px) {
@@ -210,7 +221,7 @@ img {
     .hero .hero__text .hero__header {
       font-size: 1.125rem;
       margin-bottom: 1rem; }
-      @media (min-width: 615px) {
+      @media (min-width: 650px) {
         .hero .hero__text .hero__header {
           font-size: 1.675rem; } }
       @media (min-width: 960px) {
@@ -267,7 +278,7 @@ img {
       .brands .brands__logo-grid {
         width: 90vw;
         padding: 0 1.5rem; } }
-    @media (min-width: 615px) {
+    @media (min-width: 650px) {
       .brands .brands__logo-grid {
         width: 80vw; } }
     @media (min-width: 800px) {
@@ -303,8 +314,6 @@ img {
 
 .testimonials {
   color: white;
-  padding-left: 1.875rem;
-  padding-right: 1.875rem;
   letter-spacing: .05rem;
   line-height: 1.5rem;
   display: flex;
@@ -419,6 +428,78 @@ img {
       .collaboration .collaboration__cta-btn {
         padding: .875rem 2rem;
         padding: .975rem 2.35rem; } }
+
+.features {
+  background-color: white;
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .features .features__header {
+    color: black;
+    font-size: 1.125rem;
+    text-align: center;
+    margin-bottom: 1.25rem; }
+  .features .features__subheader {
+    color: black;
+    text-align: center;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 4.5rem; }
+  .features .features__tile-grid {
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    @media (min-width: 650px) {
+      .features .features__tile-grid {
+        flex-flow: row wrap;
+        justify-content: space-between; } }
+    @media (min-width: 800px) {
+      .features .features__tile-grid {
+        margin-bottom: 5rem; } }
+    @media (min-width: 1200px) {
+      .features .features__tile-grid {
+        justify-content: space-around; } }
+    .features .features__tile-grid .features__tile {
+      width: 100%;
+      margin-bottom: 4rem;
+      max-width: 458px; }
+      @media (min-width: 650px) {
+        .features .features__tile-grid .features__tile {
+          width: 45%; } }
+      .features .features__tile-grid .features__tile .features__tile-img {
+        margin-bottom: 1.125rem; }
+      .features .features__tile-grid .features__tile .features__tile-header {
+        color: black;
+        margin-bottom: .875rem; }
+        @media (min-width: 800px) {
+          .features .features__tile-grid .features__tile .features__tile-header {
+            font-size: 1.25rem; } }
+        @media (min-width: 1200px) {
+          .features .features__tile-grid .features__tile .features__tile-header {
+            font-size: 1.5rem; } }
+      .features .features__tile-grid .features__tile .features__tile-text {
+        color: black;
+        font-weight: 500;
+        margin-bottom: .875rem; }
+  .features .features__footer {
+    color: black;
+    text-align: center;
+    line-height: 1.5rem;
+    margin-bottom: 1rem; }
+    @media (min-width: 800px) {
+      .features .features__footer {
+        font-size: 1.2rem;
+        margin-bottom: 1.75rem; } }
+    @media (min-width: 1200px) {
+      .features .features__footer {
+        font-size: 1.375rem; } }
+  .features .features__footer-link {
+    font-size: .95rem; }
 
 .hidden {
   display: none; }

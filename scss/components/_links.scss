@@ -1,0 +1,15 @@
+@import  '../utilities/_breakpoints.scss';
+
+.link {
+  text-decoration: none;
+  color: rgb(48, 194, 255);
+  font-size: .825rem;
+
+  @include breakpoint-screen-sm-up {
+    font-size: .9rem;
+  }
+
+  @include breakpoint-screen-xlg-up {
+    font-size: 1.125rem;
+  }
+}
