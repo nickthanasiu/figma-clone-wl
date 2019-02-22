@@ -94,10 +94,14 @@ $hero_text_max_width: 410px;
     .hero__paragraph {
       text-align: center;
       margin-bottom: 1.5rem;
+      max-width: 25rem;
+
+
 
       @include breakpoint-screen-lg-up {
         text-align: left;
         margin-bottom: 1.75rem;
+        width: 100%;
       }
 
       @include breakpoint-screen-xlg-up {
@@ -106,7 +110,7 @@ $hero_text_max_width: 410px;
       }
     }
 
-    .hero__try-figma-btn {
+    .hero__cta-btn {
       padding: .875rem 2rem;
 
       @include breakpoint-screen-lg-up {
