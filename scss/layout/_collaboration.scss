@@ -1,0 +1,113 @@
+@import  '../utilities/_breakpoints.scss';
+
+.collaboration {
+  background-color: black;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
+
+  .collaboration__header {
+    font-size: 1.125rem;
+    text-align: center;
+    margin-bottom: 1.25rem;
+
+    @include breakpoint-screen-xlg-up {
+      font-size: 1.375rem;
+      margin-bottom: 1.75rem;
+    }
+  }
+
+  .collaboration__subheader {
+    text-align: center;
+    margin-bottom: 4.5rem;
+
+    @include breakpoint-screen-sm-up {
+      font-size: .9rem;
+      width: 40rem;
+    }
+
+    @include breakpoint-screen-xlg-up {
+      font-size: 1rem;
+      margin-bottom: 5rem;
+    }
+  }
+
+  .collaboration__tile-grid {
+    width: 100%;
+    max-width: 1200px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include breakpoint-screen-sm-up {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 2.675rem;
+    }
+
+    @include breakpoint-screen-xlg-up {
+      justify-content: space-around;
+    }
+
+    .collaboration__tile {
+      width: 100%;
+      margin-bottom: 4rem;
+      max-width: 360px;
+
+      @include breakpoint-screen-sm-up {
+        width: 30.75%;
+        margin-bottom: 0;
+        min-height: 412px;
+      }
+
+      .collaboration__tile-img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1.5rem;
+      }
+
+      .collaboration__tile-header {
+        font-weight: 400;
+        margin-bottom: 1rem;
+
+        @include breakpoint-screen-sm-up {
+          font-size: 1.25rem;
+        }
+
+        @include breakpoint-screen-xlg-up {
+          font-size: 1.375rem;
+        }
+      }
+
+      .collaboration__tile-text {
+        font-size: .75rem;
+
+        @include breakpoint-screen-sm-up {
+          font-size: .875rem;
+        }
+
+        @include breakpoint-screen-xlg-up {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+
+  .collaboration__cta-btn {
+    font-size: .9rem;
+
+    @include breakpoint-screen-sm-up {
+      //font-size: 1.25rem;
+      padding: .875rem 2rem;
+      padding: .975rem 2.35rem;
+    }
+  }
+
+}
