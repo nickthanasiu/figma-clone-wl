@@ -445,7 +445,6 @@ img {
     color: black;
     text-align: center;
     font-weight: 500;
-    text-align: center;
     margin-bottom: 4.5rem; }
   .features .features__tile-grid {
     width: 100%;
@@ -500,6 +499,75 @@ img {
         font-size: 1.375rem; } }
   .features .features__footer-link {
     font-size: .95rem; }
+
+.tutorials {
+  background-color: black;
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .tutorials .tutorials__header {
+    font-size: 1.125rem;
+    text-align: center;
+    margin-bottom: 1.25rem; }
+    @media (min-width: 1200px) {
+      .tutorials .tutorials__header {
+        font-size: 1.375rem;
+        margin-bottom: 1.75rem; } }
+  .tutorials .tutorials__subheader {
+    max-width: 640px;
+    text-align: center;
+    margin-bottom: 4.5rem; }
+    @media (min-width: 800px) {
+      .tutorials .tutorials__subheader {
+        font-size: .9rem;
+        width: 40rem; } }
+    @media (min-width: 1200px) {
+      .tutorials .tutorials__subheader {
+        font-size: 1rem;
+        margin-bottom: 5rem; } }
+  .tutorials .tutorials__tile-grid {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    @media (min-width: 800px) {
+      .tutorials .tutorials__tile-grid {
+        flex-direction: row;
+        justify-content: space-between; } }
+    .tutorials .tutorials__tile-grid .tutorials__tile {
+      width: 100%;
+      margin-bottom: 4rem;
+      max-width: 360px; }
+      .tutorials .tutorials__tile-grid .tutorials__tile.bottom-tile {
+        margin-bottom: 0; }
+      @media (min-width: 800px) {
+        .tutorials .tutorials__tile-grid .tutorials__tile {
+          width: 30.75%;
+          margin-bottom: 0;
+          min-height: 412px; } }
+      .tutorials .tutorials__tile-grid .tutorials__tile .tutorials__tile-img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1.5rem; }
+      .tutorials .tutorials__tile-grid .tutorials__tile .tutorials__tile-header {
+        font-weight: 400;
+        margin-bottom: 1rem; }
+        @media (min-width: 800px) {
+          .tutorials .tutorials__tile-grid .tutorials__tile .tutorials__tile-header {
+            font-size: 1.125rem;
+            line-height: 1.5rem; } }
+        @media (min-width: 1200px) {
+          .tutorials .tutorials__tile-grid .tutorials__tile .tutorials__tile-header {
+            font-size: 1.375rem;
+            line-height: 1.675rem; } }
+      .tutorials .tutorials__tile-grid .tutorials__tile .tutorials__learn-more-link {
+        font-size: .95rem; }
+        @media (min-width: 1200px) {
+          .tutorials .tutorials__tile-grid .tutorials__tile .tutorials__learn-more-link {
+            font-size: 1.125rem; } }
 
 .hidden {
   display: none; }
