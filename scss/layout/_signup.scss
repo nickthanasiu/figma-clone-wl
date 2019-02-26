@@ -1,0 +1,110 @@
+@import '../base/_colors.scss';
+
+$google_btn_and_input_height: 60px;
+$border_radius: 3px;
+
+.signup {
+  width: 100%;
+  padding: 3.75rem 1.625rem 1.25rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include breakpoint-screen-sm-up {
+    padding: 6.25rem 1.625rem 2.5rem;
+  }
+
+  @include breakpoint-screen-xlg-up {
+    padding: 9.375rem 1.625rem 5rem;
+  }
+
+  .signup__header {
+    color: black;
+    font-size: .9rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .signup__form {
+    width: 25rem;
+    padding: 1.625rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .signup__with-google-btn {
+      background-color: white;
+      color: grey;
+      width: 100%;
+      height: $google_btn_and_input_height;
+      font-size: .9rem;
+      letter-spacing: .05rem;
+      border: 1px solid grey;
+      border-radius: $border_radius;
+      padding: 1rem 0;
+      cursor: pointer;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, .05);
+      }
+
+      .signup__with-google-btn-text {
+        margin-left: .5rem;
+      }
+    }
+
+    .signup__form-or-span {
+      color: grey;
+      font-size: .95rem;
+      margin: 1.25rem auto;
+    }
+
+    .signup__form-input {
+      width: 100%;
+      height: $google_btn_and_input_height;
+      border: 1px solid lightgrey;
+      border-radius: $border_radius;
+      margin-bottom: 1rem;
+      padding-left: 1rem;
+      font-size: .75rem;
+      letter-spacing: .05rem;
+
+      &:focus {
+        outline: none;
+        border: 1px solid $blue;
+      }
+
+      &::placeholder {
+        color: lightgrey;
+        font-size: .75rem;
+        font-weight: 500;
+        letter-spacing: .05rem;
+      }
+    }
+
+    .signup__form-submit-btn {
+      width: 100%;
+      height: $google_btn_and_input_height;
+      font-size: .9rem;
+      margin-top: 1rem;
+    }
+  }
+
+  .signup__link {
+    font-size: .7rem;
+    margin-bottom: 1rem;
+  }
+
+  .signup__already-have-account {
+    font-size: .7rem;
+
+    .signup__signin-link {
+      font-size: .7rem;
+    }
+  }
+}

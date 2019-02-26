@@ -1,8 +1,9 @@
+@import '../base/_colors.scss';
 @import  '../utilities/_breakpoints.scss';
 
 .link {
   text-decoration: none;
-  color: rgb(48, 194, 255);
+  color: $blue;
   font-size: .825rem;
 
   @include breakpoint-screen-sm-up {
