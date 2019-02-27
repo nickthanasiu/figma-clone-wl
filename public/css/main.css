@@ -643,5 +643,99 @@ img {
     .signup .signup__already-have-account .signup__signin-link {
       font-size: .7rem; }
 
+.footer {
+  max-width: 1440px;
+  padding-top: 6rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 800px) {
+    .footer {
+      padding: 4.375rem 1.875rem; } }
+  @media (min-width: 960px) {
+    .footer {
+      padding-top: 9rem;
+      flex-direction: row; } }
+  .footer .footer__header-and-social-links-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; }
+    @media (min-width: 960px) {
+      .footer .footer__header-and-social-links-container {
+        width: 18%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-right: 1rem; } }
+    .footer .footer__header-and-social-links-container .footer__header {
+      font-size: 2.125rem; }
+      @media (min-width: 960px) {
+        .footer .footer__header-and-social-links-container .footer__header {
+          margin-bottom: 2rem; } }
+      .footer .footer__header-and-social-links-container .footer__header .footer__header-link {
+        text-decoration: none;
+        color: black; }
+    .footer .footer__header-and-social-links-container .footer__social-links {
+      width: 5.5rem;
+      display: flex;
+      justify-content: space-between; }
+      @media (min-width: 650px) {
+        .footer .footer__header-and-social-links-container .footer__social-links {
+          width: 18rem; } }
+      @media (min-width: 960px) {
+        .footer .footer__header-and-social-links-container .footer__social-links {
+          flex-direction: column; } }
+      .footer .footer__header-and-social-links-container .footer__social-links .footer__social-link-item {
+        margin-bottom: 1rem; }
+        .footer .footer__header-and-social-links-container .footer__social-links .footer__social-link-item .footer__social-link {
+          text-decoration: none;
+          color: inherit;
+          display: flex; }
+          .footer .footer__header-and-social-links-container .footer__social-links .footer__social-link-item .footer__social-link:hover {
+            color: #30c2ff;
+            fill: #30c2ff; }
+          .footer .footer__header-and-social-links-container .footer__social-links .footer__social-link-item .footer__social-link .footer__social-link-text {
+            display: none; }
+            @media (min-width: 650px) {
+              .footer .footer__header-and-social-links-container .footer__social-links .footer__social-link-item .footer__social-link .footer__social-link-text {
+                display: inline;
+                color: inherit;
+                font-size: .75rem;
+                font-weight: 500;
+                letter-spacing: .05rem;
+                margin-left: .5rem; } }
+  .footer .footer__row {
+    margin-top: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; }
+    @media (min-width: 960px) {
+      .footer .footer__row {
+        margin-top: 1.375rem;
+        flex-grow: 1; } }
+    .footer .footer__row .footer__column {
+      width: 42%;
+      font-size: .8rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem; }
+      @media (min-width: 650px) {
+        .footer .footer__row .footer__column {
+          width: 22%; } }
+      @media (min-width: 960px) {
+        .footer .footer__row .footer__column {
+          margin: 0;
+          margin-right: 1rem; } }
+      .footer .footer__row .footer__column .footer__column-header {
+        color: black;
+        font-weight: 600;
+        margin-bottom: 1.25rem; }
+      .footer .footer__row .footer__column .footer__column-list .footer__column-list-item {
+        margin-bottom: 1rem; }
+        .footer .footer__row .footer__column .footer__column-list .footer__column-list-item .footer__column-link {
+          color: black; }
+          @media (min-width: 1200px) {
+            .footer .footer__row .footer__column .footer__column-list .footer__column-list-item .footer__column-link {
+              font-size: inherit; } }
+
 .hidden {
   display: none; }
